@@ -1,0 +1,6 @@
+.home-container{
+display: flex;
+flex-direction: column;
+min-height: 375px;
+background-image:url(../../assets/Home/background.gif);
+}
