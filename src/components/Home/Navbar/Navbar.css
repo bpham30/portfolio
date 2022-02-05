@@ -2,9 +2,8 @@
 .navbar-brand{
     display: flex;
     flex-direction: column;
-    height: 50px;
-    padding: 5px;
-    margin-left: 5px;
+    height: 40px;
+    padding-left: 25px;;
 }
 .navbar-brand:hover {
     transition: .5s ease-out;
@@ -13,11 +12,10 @@
 }
 .nav-link{
     text-decoration: none;
-    margin-left: 100px;
-    color: aliceblue !important;
+    color: black !important;
     display: flex;
     flex-direction: column;
-    font-family: "Poppins SemiBold";
+    font-family: "Poppins Light";
     text-align: center;
     border-bottom: 2px solid transparent;
     justify-content: space-between;
@@ -26,6 +24,7 @@
     transition: .5s ease-in;
     border-bottom: 2px solid #ff8331;
     transform: scale(1.07);
+    font-family: "Poppins Medium";
 }
 .navbar-toggler{
     color: transparent !important;
@@ -38,21 +37,7 @@
 .bg-dark {
     background-color: rgb(0, 0, 0) !important;
 }
-@media screen and (max-width: 1110px) {
-    .navbar-brand{
-        padding: 1px;
-    }
-    .nav-link{
-        margin-right: 100px;
-    }
-}
-@media screen and (max-width: 910px) {
-    .navbar-brand{
-        padding: 1px;
-    }
-}
-@media screen and (max-width: 810px) {
-    .navbar-brand{
-        padding: 1px;
-    }
+.offcanvas-title{
+    margin-left: 110px;
+    font-family: "Poppins Medium";
 }
