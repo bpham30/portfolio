@@ -12,6 +12,12 @@
     text-align: center;
     margin-bottom: 4em;
 }
-.calc-card-parent .overview-container{
-    background-color: black;
+#calc-overview{
+    background-image: url(../../assets/Cards/calc_bg.jpeg) !important;
+}
+#calc-open .card-btn{
+    background-color: rgb(140, 120, 163) !important;
+}
+#calc-open{
+    background:linear-gradient(#592899, #a47eeb) !important;
 }
