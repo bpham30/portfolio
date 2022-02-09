@@ -10,8 +10,8 @@
 }
 .projects-title{
     text-align: center;
+    margin-bottom: 4em;
 }
-.project-cards-container{
-    margin-top: 50px;
-    
+.calc-card-parent .overview-container{
+    background-color: black;
 }

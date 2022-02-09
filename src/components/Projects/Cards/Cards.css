@@ -13,3 +13,16 @@
     overflow: hidden;
     border-radius: 28px;
 }
+.card-overlay{
+    position: absolute;
+    width: auto;
+    height: 23em;
+    z-index: 99;
+}
+.card-overlay img{
+    width: auto;
+    height: 100%;
+}
+.card-overlay{
+    transition-duration: 1s;
+}

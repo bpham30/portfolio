@@ -1,25 +1,45 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './OpenCard.css';
-import reactImg from "../../../assets/Cards/react.png"
-import vueImg from "../../../assets/Cards/vue.png"
-import boostrap from "../../../assets/Cards/bootstrap.png"
-import langImg from "../../../assets/Cards/htmlcssjs.png"
+import { motion } from 'framer-motion';
+import { CardContext } from './context';
+import htmlImg from "../../../assets/Cards/html.png"
+import cssImg from "../../../assets/Cards/css.png"
+import jsImg from "../../../assets/Cards/js.png"
 
-export default function OpenCard() {
+export default function OpenCard(props) {
+    const {active, setActive} = useContext(CardContext);
+
+    const transition = {
+        type: "tween",
+    }
+
+    let animate = {};
+    if (active === "overview")
+        animate = { x: 0};
+    else if(active === "open")
+        animate = {x: -290};
+
+        
   return (
-      <div className='open-card-container'>
+      <motion.div className='open-card-container' animate={animate} transition={transition}>
         <div className="info-container">
             <div className="inbox-container">
                 <div className="accessory">
-                    <img src={vueImg}/>
+                    <img src={props.icon}/>
                 </div>
                 <div className="accessory">
-                    <img src={langImg}/>
+                    <img src={htmlImg}/>
+                </div>
+                <div className="accessory">
+                    <img src={cssImg}/>
+                </div>
+                <div className="accessory">
+                    <img src={jsImg}/>
                 </div>
             </div>
-            <p>This app is coded with vue</p>
+            <p className='description'>{props.desc}</p>
             <button className='btn card-btn'>Open</button>
         </div>
-      </div>
+      </motion.div>
   );
 }
