@@ -1,0 +1,35 @@
+.open-card-container{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 28px;
+    background-color:rgb(184, 122, 71);
+    padding: 10px;
+
+}
+.info-container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fafafa;
+    border-radius: 30px;
+    padding: 10px 14px;
+    align-items: center;
+}
+.inbox-container{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+
+}
+.accessory{
+    width: auto;
+    height: 1.5em;
+}
+.accessory img{
+    width: auto;
+    height: 100%;
+}

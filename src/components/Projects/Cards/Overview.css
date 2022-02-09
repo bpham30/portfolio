@@ -1,0 +1,47 @@
+.overview-container{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-image: url(../../../assets/Cards/todo_bg.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: -110px;
+    border-radius: 28px;
+    padding-bottom: 3em;
+    background-color: rgb(236, 236, 236);
+    
+    
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin-bottom: 1.8em;
+    align-items: center;
+    
+}
+.title{
+    margin: 0;
+    font-family: "Poppins ExtraBold";
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    
+}
+.card-btn {
+    margin-top: 1em;
+    outline: none;
+    border: none;
+    border-radius: 28px;
+    color: white;
+    font-family: "Poppins SemiBold";
+    background-color: rgb(163, 139, 120);
+    cursor: pointer;
+    transition: all 320ms ease-in-out;
+}
+.card-btn:hover{  
+    background-color: rgb(119, 99, 86);
+    color: white;
+}
