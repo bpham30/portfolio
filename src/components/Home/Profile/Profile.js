@@ -2,9 +2,9 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 
-export default function Profile() {
+export default function Profile () {
   return (
-    <div className="profile-container">
+    <div id='about' className="profile-container">
       <div className="profile-parent">
         <div className="profile-pic-wrap">
             <div className="profile-picture">
@@ -44,8 +44,10 @@ export default function Profile() {
           </div>
         </div>
           <div className="profile-options">
-            <button className="btn primary-btn"> Hire Me </button>
-            <a href="https://docs.google.com/document/d/1YGUCKekvJDnlv5bO-MQFmHsnYs8QNeUi/edit?usp=sharing&ouid=103085667741888858416&rtpof=true&sd=true">
+            <a target="_blank" rel ="noopener noreferrer" href="https://www.linkedin.com/in/bpham15/">
+              <button className="btn primary-btn"> Hire Me </button>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href ="https://drive.google.com/file/d/1-n55pOIG4Vuwkww4sYnPDfEYRHZ9uFfj/view?usp=sharing">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
