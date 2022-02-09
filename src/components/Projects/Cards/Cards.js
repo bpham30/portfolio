@@ -26,10 +26,11 @@ export default function Cards(props) {
           <img src={props.img} />
         </motion.div>
         <div className="card-wrapper">
-          <Overview title={props.title} />
-          <OpenCard icon={props.icon} desc={props.desc} />
+          <Overview title={props.title} id= {props.id}/>
+          <OpenCard icon={props.icon} desc={props.desc} openid = {props.openid} />
         </div>
       </div>
+      
     </CardContext.Provider>
   );
 }

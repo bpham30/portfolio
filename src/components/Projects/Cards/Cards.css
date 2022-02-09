@@ -17,7 +17,7 @@
     position: absolute;
     width: auto;
     height: 23em;
-    z-index: 99;
+    z-index: 100;
 }
 .card-overlay img{
     width: auto;

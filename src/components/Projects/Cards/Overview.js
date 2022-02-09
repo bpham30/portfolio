@@ -20,7 +20,7 @@ export default function Overview(props) {
     else if(active === "open")
         animate = {x: -290};
   return (
-    <motion.div id='overview-bg' className='overview-container' animate={animate} transition={transition} >
+    <motion.div id={props.id} className='overview-container' animate={animate} transition={transition} >
         <div className="title-container">
             <h1 className='title'>{props.title}</h1>
             <button onClick={switchToOpen}className='btn card-btn'>Overview</button>

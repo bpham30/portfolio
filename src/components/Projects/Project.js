@@ -9,7 +9,7 @@ import Overview from './Cards/Overview';
 
 
 export default function Project() {
-  var kids = document.getElementsByName(Overview).children;
+  
 
 
   return (
@@ -23,12 +23,14 @@ export default function Project() {
           img={handImg} title ="to-do list"
           icon ={vueImg}
           desc= {"Simple to-do list application where users can input and complete their tasks. Coded with Vue.js, HTML, CSS, and JavaScript"}
+          id = {''}
           />
 
           <Cards className='calc-card-parent' 
           img={calcImg} title="calculator"
           icon ={vueImg}
           desc= {"Simple iPhone style calculator application where users can compute basic math operations. Coded with Vue.js, HTML, CSS, and JavaScript"}
+          id = {'calc-overview'} openid={'calc-open'}
           />
           
 
