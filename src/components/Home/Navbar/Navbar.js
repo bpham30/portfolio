@@ -7,7 +7,7 @@ const Navbar = () =>{
     letter.current.scrollIntoView({ behavior: "smooth", block: "center" });
 
   return (
-    <nav className="navbar navbar-dark bg-transparent fixed-top">
+    <nav className="navbar navbar-dark bg-dark fixed-top">
     <div className="container-fluid">
     <a className="navbar-brand" href="#">BANG PHAM</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -21,7 +21,7 @@ const Navbar = () =>{
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#about">ABOUT ME</a>
+            <a className="nav-link active" aria-current="page" href="#about" >ABOUT ME</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#projects">PROJECTS</a>
