@@ -1,6 +1,17 @@
 .projects-container{
     background-color: white;
     padding-top: 50px;
+    height: 100%;
+    width: 100%;
     display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.projects-title{
     text-align: center;
+}
+.project-cards-container{
+    margin-top: 50px;
+    
 }
