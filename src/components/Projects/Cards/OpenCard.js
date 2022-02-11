@@ -22,7 +22,10 @@ export default function OpenCard(props) {
         
   return (
       <motion.div id={props.openid}className='open-card-container' animate={animate} transition={transition}>
+                    <div className="dropshadow">
+          </div>
         <div className="info-container">
+            
             <div className="inbox-container">
                 <div className="accessory">
                     <img src={props.icon}/>

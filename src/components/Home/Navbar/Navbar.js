@@ -1,40 +1,36 @@
-import React, {useRef} from "react";
+import React from "react";
 import './Navbar.css';
+import resume from '../../../assets/Home/resume.pdf'
+import $ from 'jquery'
 
 const Navbar = () =>{
-    const Link = useRef(null);
-    const executeScroll = (letter) =>
-    letter.current.scrollIntoView({ behavior: "smooth", block: "center" });
+
+
+    const handleLink = () => {
+      $(".navbar-collapse").removeClass("show")
+    }
 
   return (
-    <nav className="navbar navbar-dark bg-dark fixed-top">
-    <div className="container-fluid">
-    <a className="navbar-brand" href="#">BANG PHAM</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+<nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a className="navbar-brand" href="#about">Bang Pham</a>
+  <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div className="offcanvas-header">
-        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">BANG PHAM</h5>
-        <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div className="offcanvas-body">
-        <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#about" >ABOUT ME</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#projects">PROJECTS</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1-n55pOIG4Vuwkww4sYnPDfEYRHZ9uFfj/view?usp=sharing">RESUME</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <div className="collapse navbar-collapse" id="navbarNav">
+    <ul className="navbar-nav">
+      <li className="nav-item ">
+        <a className="nav-link" href="#about" onClick={handleLink}>About Me <span className="sr-only"></span></a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#project" onClick={handleLink}>Projects</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#" onClick={handleLink}>Contact</a>
+      </li>
+      <li className="nav-item" >
+        <a className="nav-link" target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
+      </li>
+    </ul>
   </div>
 </nav>
   );
