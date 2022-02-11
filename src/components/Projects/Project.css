@@ -1,16 +1,27 @@
 .projects-container{
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    padding-top: 50px;
+    padding-top: 5em;
     height: 100%;
     width: 100%;
-    display: grid;
     align-items: center;
     justify-content: center;
     
 }
-.projects-title{
+.projects-title h1{
     text-align: center;
-    margin-bottom: 4em;
+    font-size: 60px;
+    color:#1f2235;
+    margin-bottom: 1em;
+    font-family: 'Poppins ExtraBold';
+}
+.projects-title h5{
+    text-align: center;
+    margin-bottom: 5em;
+    font-size: 20px;
+    color:#1f2235;
+    font-family: 'Poppins Light';
 }
 #calc-overview{
     background-image: url(../../assets/Cards/calc_bg.jpeg) !important;
@@ -20,4 +31,20 @@
 }
 #calc-open{
     background:linear-gradient(#592899, #a47eeb) !important;
+}
+.row{
+    --bs-gutter-x: .5rem;
+    flex-wrap: nowrap;
+    padding-left: 7em;
+    justify-content:center;
+    
+}
+.card-outer{
+    margin-bottom: 3em;
+}
+@media screen and (max-width: 810px) {
+    .row{
+        display:inline;
+        
+    }
 }

@@ -3,10 +3,11 @@
     display: flex;
     flex-direction: column;
     height: 40px;
-    padding-left: 25px;;
+    padding-left: 15px;;
+    font-family: "Poppins Medium";
 }
 .navbar-brand:hover {
-    transition: .5s ease-out;
+    transition: .5s ease-in;
     transform: scale(1.07);
     
 }
@@ -40,4 +41,12 @@
 .offcanvas-title{
     margin-left: 110px;
     font-family: "Poppins Medium";
+}
+.nav{
+    color: white;
+}
+.navbar-nav{
+    margin-left: auto;
+    padding: 0 15px;
+    gap: 25px;
 }
