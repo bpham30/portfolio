@@ -24,11 +24,6 @@
     margin-top: 1em;
     
 }
-.card-overlay img{
-    width: auto;
-    height: 100%;
-    
-}
 .card-overlay{
     transition-duration: 1s;
 }

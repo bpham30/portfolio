@@ -33,7 +33,6 @@
     
 }
 .card-btn {
-    margin-top: 1em;
     outline: none;
     border: none;
     border-radius: 28px;
@@ -46,4 +45,7 @@
 .card-btn:hover{  
     background-color: rgb(119, 99, 86);
     color: white;
+}
+.card-btn:active{
+    outline: none;
 }

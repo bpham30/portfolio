@@ -32,6 +32,15 @@
 #calc-open{
     background:linear-gradient(#592899, #a47eeb) !important;
 }
+#web-overview{
+    background-image: url(../../assets/Cards/web_bg.jpeg) !important;
+}
+#web-open .card-btn{
+    background-color: rgb(129, 163, 120) !important;
+}
+#web-open{
+    background:linear-gradient(#289964, #7eeb9f) !important;
+}
 .row{
     --bs-gutter-x: .5rem;
     flex-wrap: nowrap;
@@ -41,6 +50,18 @@
 }
 .card-outer{
     margin-bottom: 3em;
+}
+#overview-btn-web{
+    background-color: rgb(120, 163, 139);
+}
+#overview-btn-web:hover{  
+background-color: rgb(86, 119, 101);
+}
+#overview-btn{
+        background-color: rgb(133, 120, 163);
+    }
+#overview-btn:hover{  
+    background-color: rgb(103, 86, 119);
 }
 @media screen and (max-width: 810px) {
     .row{
