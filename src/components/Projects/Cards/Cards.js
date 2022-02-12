@@ -23,11 +23,11 @@ export default function Cards(props) {
           animate={animate}
           transition={{ type: "tween" }}
         >
-          <img src={props.img} />
+
         </motion.div>
         <div className="card-wrapper">
-          <Overview title={props.title} id= {props.id}/>
-          <OpenCard icon={props.icon} desc={props.desc} openid = {props.openid} />
+          <Overview title={props.title} id= {props.id } btnid={props.btnid}/>
+          <OpenCard icon={props.icon} desc={props.desc} openid = {props.openid} img={props.img} />
         </div>
       </div>
       

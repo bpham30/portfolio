@@ -12,7 +12,9 @@ export default function OpenCard(props) {
     const transition = {
         type: "tween",
     }
-
+    const switchToClose = () => {
+        setActive("overview");
+    }
     let animate = {};
     if (active === "overview")
         animate = { x: 0};
@@ -22,10 +24,9 @@ export default function OpenCard(props) {
         
   return (
       <motion.div id={props.openid}className='open-card-container' animate={animate} transition={transition}>
-                    <div className="dropshadow">
-          </div>
+          
         <div className="info-container">
-            
+
             <div className="inbox-container">
                 <div className="accessory">
                     <img src={props.icon}/>
@@ -41,7 +42,15 @@ export default function OpenCard(props) {
                 </div>
             </div>
             <p className='description'>{props.desc}</p>
-            <button className='btn card-btn'>Open</button>
+            <div className='open-options' animate={animate} transition={transition} ></div>
+            {
+                
+            }
+            <button className='btn card-btn' href="/">Open</button>
+            <button onClick={switchToClose} className='btn card-btn-close'>Close</button>
+        </div>
+        <div className="card-img">
+        <img src={props.img} />
         </div>
       </motion.div>
   );

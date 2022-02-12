@@ -23,7 +23,7 @@ export default function Overview(props) {
     <motion.div id={props.id} className='overview-container' animate={animate} transition={transition} >
         <div className="title-container">
             <h1 className='title'>{props.title}</h1>
-            <button onClick={switchToOpen}className='btn card-btn'>Overview</button>
+            <button onClick={switchToOpen}className='btn card-btn' id={props.btnid}>Overview</button>
         </div>
     </motion.div>
   );
