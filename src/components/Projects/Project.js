@@ -6,13 +6,14 @@ import calcImg from "../../assets/Cards/calc.png";
 import reactImg from "../../assets/Cards/react.png";
 import vueImg from "../../assets/Cards/vue.png";
 import Overview from "./Cards/Overview";
-import webImg from "../../assets/Cards/webImg.png"
+import webImg from "../../assets/Cards/webImg.png";
+import Gallery from "./Gallery/Gallery";
 
 export default function Project() {
   return (
     <div id="project" className="projects-container">
       <div className="projects-title">
-        <h1>PROJECTS</h1>
+        <h1>CODING PROJECTS</h1>
       </div>
 
       <div className="project-cards">
@@ -39,7 +40,8 @@ export default function Project() {
                 "Simple calculator app where users can compute basic math operations. Coded with Vue.js, HTML, CSS, and JavaScript"
               }
               id={"calc-overview"}
-              openid={"calc-open"} btnid={"overview-btn"}
+              openid={"calc-open"}
+              btnid={"overview-btn"}
             />
           </div>
           <div className="col-md-6 card-outer">
@@ -52,10 +54,15 @@ export default function Project() {
                 "Rsponsive portfolio web application for personal and business use. Coded with React.js, HTML, CSS, and JavaScript"
               }
               id={"web-overview"}
-              openid={"web-open"} btnid={'overview-btn-web'}
+              openid={"web-open"}
+              btnid={"overview-btn-web"}
             />
           </div>
         </div>
+      </div>
+      <div className="gallery-parent">
+        <Gallery />
+        
       </div>
     </div>
   );

@@ -25,7 +25,10 @@ const Navbar = () =>{
         <a className="nav-link" href="#project" onClick={handleLink}>Projects</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#" onClick={handleLink}>Contact</a>
+        <a className="nav-link" href="#gallery" onClick={handleLink}>Artwork</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#contact" onClick={handleLink}>Contact</a>
       </li>
       <li className="nav-item" >
         <a className="nav-link" target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
